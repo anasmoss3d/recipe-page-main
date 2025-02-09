@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Young+Serif&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Outfit:wght@100..900&family=Young+Serif&display=swap");
+:root {
+  --White: hsl(0, 0%, 100%);
+
+  --Stone-100: hsl(30, 54%, 90%);
+  --Stone-150: hsl(30, 18%, 87%);
+  --Stone-600: hsl(30, 10%, 34%);
+  --Stone-900: hsl(24, 5%, 18%);
+
+  --Brown-800: hsl(14, 45%, 36%);
+
+  --Rose-800: hsl(332, 51%, 32%);
+  --Rose-50: hsl(330, 100%, 98%);
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin: 1rem;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+body {
+  font-size: 1rem;
+  background-color: var(--Stone-100);
+  font-family: "Outfit", serif;
+}
+.container {
+  background-color: var(--White);
+}
+hr {
+  color: var(--Stone-600);
+}
+.content {
+  padding: 2rem;
+}
+.container .image {
+  width: 100%;
+}
+.container .image img {
+  width: 100%;
+}
+.container h1 {
+  font-family: "Young Serif", serif;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+.container .f-p {
+  margin-bottom: 1rem;
+  color: var(--Stone-600);
+}
+.prepare {
+  background-color: var(--Rose-50);
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+.prepare h3 {
+  color: var(--Rose-800);
+  margin-bottom: 1rem;
+}
+.prepare ul {
+  margin: 1.25rem;
+  list-style-position: inside;
+  color: var(--Stone-600);
+}
+.prepare ul li::marker {
+  color: var(--Rose-800);
+  font-size: 0.625rem;
+}
+.prepare ul li span {
+  font-weight: 800;
+  margin-left: 1rem;
+  line-height: 1.6;
+}
+.special-head {
+  margin: 1rem 0;
+  color: var(--Brown-800);
+}
+.ingredients ul {
+  margin: 1.25rem;
+  list-style-position: inside;
+  color: var(--Stone-600);
+}
+.ingredients ul li::marker {
+  color: var(--Brown-800);
+  font-size: 0.625rem;
+}
+.ingredients ul li span {
+  margin-left: 1rem;
+}
+
+.instruction ol {
+  margin: 1.25rem;
+  list-style-position: outside;
+}
+.instruction ol li::marker {
+  color: var(--Brown-800);
+  font-weight: 800;
+}
+.instruction ol li {
+  line-height: 1.5;
+  margin: 1rem;
+  color: var(--Stone-600);
+}
+.instruction ol li span {
+  margin-left: 1rem;
+  font-weight: 800;
+}
+.nutrition .p-1 {
+  color: var(--Stone-600);
+}
+.nutrition .info {
+  display: flex;
+  flex-direction: column;
+  padding: 0 1rem;
+}
+.nutrition .info p {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1rem 0;
+  color: var(--Stone-600);
+}
+.nutrition .info span {
+  color: var(--Brown-800);
+  font-weight: 800;
+}
+@media (min-width: 768px) {
+  .container {
+    padding: 3rem;
+    width: 650px;
+    margin: 5rem auto 0;
+    border-radius: 1rem;
+  }
+  img {
+    border-radius: 1rem;
+  }
+}
